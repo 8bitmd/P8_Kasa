@@ -1,0 +1,26 @@
+.element_container {
+  background-color: #F6F6F6;
+}
+
+.element_header {
+  position: relative;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+.element_header h1 {
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+}
+.element_header svg {
+  position: absolute;
+  top: 30%;
+  right: 1em;
+}
+
+.element_content p {
+  padding: 5px 20px 15px 20px;
+}
+
+/*# sourceMappingURL=aboutelement.css.map */

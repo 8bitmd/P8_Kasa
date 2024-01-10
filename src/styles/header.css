@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 45px 0 45px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 57px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+  color: #FF6060;
+}
+
+/*# sourceMappingURL=header.css.map */

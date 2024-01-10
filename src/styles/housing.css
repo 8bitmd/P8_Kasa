@@ -18,7 +18,6 @@
   height: 340px;
   width: 340px;
   object-fit: cover;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .housing_box p {
   z-index: 1;
@@ -28,6 +27,15 @@
   margin-right: 20px;
   flex-wrap: wrap;
   bottom: 1em;
+}
+
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  bottom: 4px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 /*# sourceMappingURL=housing.css.map */

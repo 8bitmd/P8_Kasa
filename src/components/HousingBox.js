@@ -8,6 +8,7 @@ export default function HousingBox() {
             {data.map((housing) => (
                 <Link to={`/${housing.id}`}>
                     <div className="housing_box" key={housing.id}>
+                        <div className="gradient"></div>
                         <img src={housing.cover}/>
                         <p>{housing.title}</p>
                     </div>

@@ -1,0 +1,21 @@
+.housing_page h1, .housing_page h2, .housing_page p {
+  color: #FF6060;
+}
+.housing_page .desc_header, .housing_page .equip_header {
+  position: relative;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+.housing_page .desc_header h2, .housing_page .equip_header h2 {
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+}
+.housing_page .desc_header svg, .housing_page .equip_header svg {
+  position: absolute;
+  top: 30%;
+  right: 1em;
+}
+
+/*# sourceMappingURL=housingpage.css.map */

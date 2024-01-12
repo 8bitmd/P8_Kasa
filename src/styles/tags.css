@@ -1,0 +1,12 @@
+.tags {
+  display: flex;
+  gap: 15px;
+}
+.tags p {
+  color: white;
+  background-color: #FF6060;
+  padding: 3px 30px 3px 30px;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=tags.css.map */

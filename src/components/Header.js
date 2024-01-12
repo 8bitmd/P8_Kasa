@@ -19,7 +19,7 @@ export default function Header() {
                     fill="#FF6060"/>
             </svg>
             <nav>
-                <Link to="/accueil">Accueil</Link>
+                <Link to="/">Accueil</Link>
                 <Link to="/apropos">A propos</Link>
             </nav>
         </header>

@@ -27,6 +27,7 @@ export const Gallery = ({photos}) => {
                 </svg>
             </button>
             <img src={currentPhoto}/>
+            <p>{index + 1}/{photos.length}</p>
         </>
     )
 }

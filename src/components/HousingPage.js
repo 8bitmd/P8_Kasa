@@ -6,6 +6,7 @@ import "../styles/housingpage.css"
 import {faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Gallery} from "./Gallery";
+import {Rating} from "./Rating";
 
 const data = require("../data/logements.json")
 
@@ -43,7 +44,7 @@ export const HousingPage = () => {
             <Tags tags={house.tags}/>
             <img src={house.host.picture}/>
             <p className={"hostname"}>{house.host.name}</p>
-            <p>{house.rating}</p>
+            <Rating rating={house.rating}/>
             <div className={"description_container"}>
                 <div className={"desc_header"}>
                     <h2>Description</h2>

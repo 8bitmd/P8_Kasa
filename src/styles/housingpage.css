@@ -1,4 +1,4 @@
-.housing_page h1, .housing_page h2, .housing_page p {
+.housing_page h1, .housing_page h2 {
   color: #FF6060;
 }
 .housing_page .desc_header, .housing_page .equip_header {
@@ -16,6 +16,9 @@
   position: absolute;
   top: 30%;
   right: 1em;
+}
+.housing_page .desc_content, .housing_page .hostname, .housing_page .location {
+  color: #FF6060;
 }
 
 /*# sourceMappingURL=housingpage.css.map */

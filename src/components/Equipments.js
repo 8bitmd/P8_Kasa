@@ -2,10 +2,10 @@ import "../styles/equipments.css"
 
 export const Equipments = ({equips}) => {
     return (
-        <ul className={"equipments"}>
+        <div className={"equipments"}>
             {
-                equips.map(equip => (<li key={equip}>{equip}</li>))
+                equips.map(equip => (<p key={equip}>{equip}</p>))
             }
-        </ul>
+        </div>
     )
 }

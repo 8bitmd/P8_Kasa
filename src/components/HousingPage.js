@@ -5,6 +5,7 @@ import {useLoaderData} from "react-router-dom";
 import "../styles/housingpage.css"
 import {faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Gallery} from "./Gallery";
 
 const data = require("../data/logements.json")
 
@@ -36,12 +37,12 @@ export const HousingPage = () => {
 
     return (
         <div className={"housing_page"}>
-            <img src={house.pictures}/>
+            <Gallery photos={house.pictures} />
             <h1>{house.title}</h1>
-            <p>{house.location}</p>
+            <p className={"location"}>{house.location}</p>
             <Tags tags={house.tags}/>
             <img src={house.host.picture}/>
-            <p>{house.host.name}</p>
+            <p className={"hostname"}>{house.host.name}</p>
             <p>{house.rating}</p>
             <div className={"description_container"}>
                 <div className={"desc_header"}>

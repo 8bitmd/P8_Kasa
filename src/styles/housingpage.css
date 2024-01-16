@@ -17,8 +17,13 @@
   top: 30%;
   right: 1em;
 }
-.housing_page .desc_content, .housing_page .hostname, .housing_page .location {
+
+.desc_content, .hostname, .location {
   color: #FF6060;
+}
+
+.equipments_container, .description_container {
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=housingpage.css.map */

@@ -1,6 +1,12 @@
 .housing_page
+  .top_section
+    display: grid
+    grid-template-columns: 80% 20%
   h1, h2
     color: #FF6060
+    margin-bottom: 0
+  .location
+    margin: 0
   .desc_header, .equip_header
     position: relative
     background-color: #FF6060
@@ -15,9 +21,41 @@
       top: 30%
       right: 1em
 
-.desc_content, .hostname, .location
-    color: #FF6060
+.housingL
+  width: 50%
 
-.equipments_container, .description_container
-  background-color: #F6F6F6
+.housingR
+  width: 50%
+
+.host
+  .host_picture
+    border-radius: 100px
+    width: 64px
+    height: 64px
+
+.expanded_arrow
+  transition: all 0.5s
+  transform: rotate(180deg)
+
+.collapsed_arrow
+  transition: all 0.5s
+  transform: rotate(0deg)
+
+.accordion
+  width: 50%
+  .accordion_header
+    display: flex
+    position: relative
+    border-radius: 15px
+    background-color: #FF6060
+    color: white
+    h2
+      color: white
+      font-weight: 500
+      padding: 10px
+      margin: 0
+    svg
+      position: absolute
+      top: 15%
+      right: 1rem
 

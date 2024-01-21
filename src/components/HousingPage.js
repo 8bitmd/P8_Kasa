@@ -3,10 +3,9 @@ import {Equipments} from "./Equipments";
 import NotFound from "./NotFound";
 import {useLoaderData} from "react-router-dom";
 import "../styles/housingpage.css"
-import {faChevronUp} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Gallery} from "./Gallery";
 import {Rating} from "./Rating";
+import {Accordion} from "./Accordion";
 
 const data = require("../data/logements.json")
 
@@ -38,31 +37,25 @@ export const HousingPage = () => {
 
     return (
         <div className={"housing_page"}>
-            <Gallery photos={house.pictures} />
-            <h1>{house.title}</h1>
-            <p className={"location"}>{house.location}</p>
-            <Tags tags={house.tags}/>
-            <img src={house.host.picture}/>
-            <p className={"hostname"}>{house.host.name}</p>
-            <Rating rating={house.rating}/>
-            <div className={"description_container"}>
-                <div className={"desc_header"}>
-                    <h2>Description</h2>
-                    <FontAwesomeIcon size="xl" icon={faChevronUp} style={{color: "white",}}/>
+            <Gallery photos={house.pictures}/>
+            <div className={"top_section"}>
+                <div className={"housingL"}>
+                    <h1>{house.title}</h1>
+                    <p className={"location"}>{house.location}</p>
+                    <Tags tags={house.tags}/>
                 </div>
-                <div className={"desc_content"}>
-                    <p>{house.description}</p>
-                </div>
-            </div>
-            <div className={"equipments_container"}>
-                <div className={"equip_header"}>
-                    <h2>Équipements</h2>
-                    <FontAwesomeIcon size="xl" icon={faChevronUp} style={{color: "white",}}/>
-                </div>
-                <div className={"equip_content"}>
-                    <Equipments equips={house.equipments}/>
+                <div className={"housingR"}>
+                    <div className={"host"}>
+                        <img className={"host_picture"} src={house.host.picture}/>
+                        <p className={"host_name"}>{house.host.name}</p>
+                    </div>
+                    <Rating rating={house.rating}/>
                 </div>
             </div>
+
+            <Accordion title={"Description"} content={house.description} />
+            <Accordion title={"Équipements"} content={<Equipments equips={house.equipments}/>} />
+
         </div>
     )
 }

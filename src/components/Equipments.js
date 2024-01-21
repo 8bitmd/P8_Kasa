@@ -1,5 +1,3 @@
-import "../styles/equipments.css"
-
 export const Equipments = ({equips}) => {
     return (
         <div className={"equipments"}>

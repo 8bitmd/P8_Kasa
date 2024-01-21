@@ -4,7 +4,7 @@ import Home from "./Home";
 import NotFound from "./NotFound";
 import About from "./About";
 import {houseLoader, HousingPage} from "./HousingPage";
-import Layout from "./Layout";
+import Layout from "./Layout/Layout";
 
 // https://codesandbox.io/s/determined-https-o6u65d?file=/src/App.js
 

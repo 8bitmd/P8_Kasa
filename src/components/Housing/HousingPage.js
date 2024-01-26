@@ -1,6 +1,6 @@
 import {Tags} from "./Tags";
 import {Equipments} from "./Equipments";
-import NotFound from "../Layout/NotFound";
+import NoMatch from "../Layout/NoMatch";
 import {useLoaderData} from "react-router-dom";
 import "./housingpage.css"
 import {Gallery} from "./Gallery";
@@ -22,7 +22,7 @@ export const HousingPage = () => {
     const house = useLoaderData()
 
     if (!house) {
-        return <NotFound />
+        return <NoMatch />
     }
 
     return (

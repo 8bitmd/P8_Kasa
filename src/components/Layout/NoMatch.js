@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import "./notfound.css"
 
-export default function NotFound() {
+export default function NoMatch() {
     return (
         <div className="container_404">
             <h1>404</h1>

@@ -1,9 +1,9 @@
-import "../styles/style.css"
+import "../assets/styles/style.css"
 import {createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider, Routes} from "react-router-dom";
 import Home from "./Home";
-import NotFound from "./NotFound";
-import About from "./About";
-import {houseLoader, HousingPage} from "./HousingPage";
+import NotFound from "./Layout/NotFound";
+import About from "./About/About";
+import {houseLoader, HousingPage} from "./Housing/HousingPage";
 import Layout from "./Layout/Layout";
 
 // https://codesandbox.io/s/determined-https-o6u65d?file=/src/App.js

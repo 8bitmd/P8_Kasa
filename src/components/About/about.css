@@ -1,0 +1,13 @@
+.about_accordions_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.about_accordions_container .accordion {
+  width: 70%;
+}
+
+/*# sourceMappingURL=about.css.map */

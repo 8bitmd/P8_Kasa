@@ -1,14 +1,13 @@
-import {Hero} from "./Hero";
-import 'material-icons/iconfont/material-icons.css';
-import hero from "../assets/abouthero.jpg"
-import {AboutElement} from "./AboutElement";
-import {Accordion} from "./Accordion";
+import {Hero} from "../Layout/Hero/Hero";
+import hero from "../../assets/abouthero.jpg"
+import {Accordion} from "../Accordion";
+import "./about.css"
 
 export default function About() {
     return (
         <div>
             <Hero image={hero} alt={"Paysage montagneux avec rivière au centre"} />
-            <div className="about_elements">
+            <div className="about_accordions_container">
                 <Accordion title={"Fiabilité"}
                            content={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."}/>
                 <Accordion title={"Respect"}

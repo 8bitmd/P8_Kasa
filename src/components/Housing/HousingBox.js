@@ -1,6 +1,6 @@
-import "../styles/housing.css"
+import "./housing.css"
 import {Link} from "react-router-dom";
-const data = require("../data/logements.json")
+const data = require("../../data/logements.json")
 
 export default function HousingBox() {
     return (

@@ -1,6 +1,6 @@
-import {Hero} from "./Hero";
-import HousingBox from "./HousingBox";
-import "../styles/housing.css"
+import {Hero} from "./Layout/Hero/Hero";
+import HousingBox from "./Housing/HousingBox";
+import "./Housing/housing.css"
 import hero from "../assets/hero.png"
 
 export default function Home() {

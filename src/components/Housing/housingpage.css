@@ -1,0 +1,70 @@
+.housing_page .top_section {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.housing_page .top_section .housing_left {
+  width: 100%;
+}
+.housing_page .top_section .housing_right {
+  width: 100%;
+}
+.housing_page .top_section .host {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.housing_page .top_section .host .host_name {
+  color: #FF6060;
+  text-align: right;
+  margin-right: 10px;
+  width: 75px;
+}
+.housing_page .top_section .host .host_picture {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+}
+.housing_page .top_section span {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+.housing_page .top_section h1, .housing_page .top_section h2 {
+  color: #FF6060;
+  margin-bottom: 0;
+}
+.housing_page .location {
+  color: #FF6060;
+  margin: 0;
+}
+.housing_page .desc_header, .housing_page .equip_header {
+  position: relative;
+  background-color: #FF6060;
+  border-radius: 5px;
+}
+.housing_page .desc_header h2, .housing_page .equip_header h2 {
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+}
+.housing_page .desc_header svg, .housing_page .equip_header svg {
+  position: absolute;
+  top: 30%;
+  right: 1em;
+}
+.housing_page .housing_accordions_container {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 50px;
+}
+.housing_page .housing_accordions_container .accordion {
+  width: 100%;
+}
+.housing_page .housing_accordions_container .housing_equipments {
+  line-height: 10px;
+}
+
+/*# sourceMappingURL=housingpage.css.map */

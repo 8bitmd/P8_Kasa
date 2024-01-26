@@ -1,0 +1,46 @@
+.hidden {
+  display: none;
+}
+
+.accordion_header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #FF6060;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.accordion_header .expanded_arrow {
+  transition: all 0.5s;
+  transform: rotate(180deg);
+}
+.accordion_header .collapsed_arrow {
+  transition: all 0.5s;
+  transform: rotate(0deg);
+}
+.accordion_header h2 {
+  display: flex;
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+}
+.accordion_header svg {
+  position: absolute;
+  right: 1em;
+  color: white;
+}
+.accordion_content {
+  position: relative;
+  bottom: 7px;
+  z-index: 0;
+  padding: 10px 15px 10px 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #FF6060;
+  font-weight: 300;
+  background-color: #F6F6F6;
+}
+
+/*# sourceMappingURL=accordion.css.map */

@@ -10,8 +10,7 @@ const routesJSX = (
     <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="apropos" element={<About />} />
-        <Route path=":housingId" element={<HousingPage />} loader={houseLoader} />
-        <Route path="*" element={<NotFound />} />
+        <Route path=":housingId" element={<HousingPage />} loader={houseLoader} errorElement={<NotFound />} />
     </Route>
 )
 

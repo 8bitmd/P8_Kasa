@@ -3,7 +3,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 -110px 0 -110px;
+  margin: 0 -110px -10px -110px;
   background-color: black;
 }
 footer .footerlogo {
@@ -11,6 +11,11 @@ footer .footerlogo {
   margin: 66px 0 30px 0;
   gap: 7px;
   align-items: end;
+}
+@media (max-width: 1024px) {
+  footer .footerlogo {
+    margin-bottom: 0;
+  }
 }
 footer .footerlogo .logo_house {
   position: relative;
@@ -20,7 +25,12 @@ footer p {
   font-size: 24px;
   font-weight: 300;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

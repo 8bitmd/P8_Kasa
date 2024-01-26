@@ -9,7 +9,6 @@ import {Accordion} from "../Accordion";
 
 const data = require("../../data/logements.json")
 
-// notion d'index, d'avance
 const housing = {}
 for (let item of data) {
     housing[item.id] = item
@@ -27,7 +26,7 @@ export const HousingPage = () => {
     }
 
     return (
-        <div className={"housing_page"}>
+        <div className={"housing_page main_container"}>
             <Gallery photos={house.pictures}/>
             <div className={"top_section"}>
                 <div className={"housing_left"}>

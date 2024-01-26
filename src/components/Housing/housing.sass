@@ -8,6 +8,12 @@
   gap: 60px
   margin: 50px 0 50px 0
   padding: 55px
+  @media (max-width: 1024px)
+    flex-direction: column
+    margin: 0
+    padding: 0
+    gap: 20px
+    background: none
 
 .housing_box
   position: relative
@@ -16,6 +22,8 @@
     height: 340px
     width: 340px
     object-fit: cover
+    @media (max-width: 1024px)
+      min-width: 100%
   p
     z-index: 1
     color: white

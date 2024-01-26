@@ -5,7 +5,7 @@ import "./about.css"
 
 export default function About() {
     return (
-        <div>
+        <div className={"main_container"}>
             <Hero image={hero} alt={"Paysage montagneux avec rivière au centre"} />
             <div className="about_accordions_container">
                 <Accordion title={"Fiabilité"}

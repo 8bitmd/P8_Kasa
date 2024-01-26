@@ -9,5 +9,10 @@
 .about_accordions_container .accordion {
   width: 70%;
 }
+@media (max-width: 1024px) {
+  .about_accordions_container .accordion {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

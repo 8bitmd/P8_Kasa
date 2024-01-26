@@ -1,6 +1,8 @@
 import "./header.css"
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
+
 export default function Header() {
+    let location = useLocation().pathname
     return (
         <header>
             <svg width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,8 +21,8 @@ export default function Header() {
                     fill="#FF6060"/>
             </svg>
             <nav>
-                <Link to="/">Accueil</Link>
-                <Link to="/apropos">A propos</Link>
+                <Link className={location === "/" && "underlined"} to="/">Accueil</Link>
+                <Link className={location === "/apropos" && "underlined"} to="/apropos">A propos</Link>
             </nav>
         </header>
     )

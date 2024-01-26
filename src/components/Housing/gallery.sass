@@ -3,14 +3,21 @@
   button
     background: none
     border: none
+    svg
+      @media (max-width: 1024px)
+        height: 24px
   .previous_photo
     position: absolute
     left: 1em
-    top: 35%
+    top: 40%
+    @media (max-width: 1024px)
+      top: 45%
   .next_photo
     position: absolute
     right: 1em
-    top: 35%
+    top: 40%
+    @media (max-width: 1024px)
+      top: 45%
   .gallery_photo
     border-radius: 25px
     width: 100%
@@ -22,3 +29,5 @@
     bottom: 1em
     left: 50%
     user-select: none
+    @media (max-width: 1024px)
+      display: none

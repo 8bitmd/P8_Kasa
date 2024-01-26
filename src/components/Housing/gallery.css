@@ -5,15 +5,30 @@
   background: none;
   border: none;
 }
+@media (max-width: 1024px) {
+  .gallery_container button svg {
+    height: 24px;
+  }
+}
 .gallery_container .previous_photo {
   position: absolute;
   left: 1em;
-  top: 35%;
+  top: 40%;
+}
+@media (max-width: 1024px) {
+  .gallery_container .previous_photo {
+    top: 45%;
+  }
 }
 .gallery_container .next_photo {
   position: absolute;
   right: 1em;
-  top: 35%;
+  top: 40%;
+}
+@media (max-width: 1024px) {
+  .gallery_container .next_photo {
+    top: 45%;
+  }
 }
 .gallery_container .gallery_photo {
   border-radius: 25px;
@@ -27,6 +42,11 @@
   bottom: 1em;
   left: 50%;
   user-select: none;
+}
+@media (max-width: 1024px) {
+  .gallery_container p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=gallery.css.map */

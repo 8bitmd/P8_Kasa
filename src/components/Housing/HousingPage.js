@@ -6,6 +6,7 @@ import "./housingpage.css"
 import {Gallery} from "./Gallery";
 import {Rating} from "./Rating";
 import {Accordion} from "../Accordion";
+import DocumentTitle from "../DocumentTitle";
 
 const data = require("../../data/logements.json")
 
@@ -25,6 +26,7 @@ export const HousingPage = () => {
         return <NoMatch />
     }
 
+    DocumentTitle("Kasa - " + house.title)
     return (
         <div className={"housing_page main_container"}>
             <Gallery photos={house.pictures}/>

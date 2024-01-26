@@ -2,8 +2,10 @@ import {Hero} from "../Layout/Hero/Hero";
 import hero from "../../assets/abouthero.jpg"
 import {Accordion} from "../Accordion";
 import "./about.css"
+import DocumentTitle from "../DocumentTitle";
 
 export default function About() {
+    DocumentTitle("Kasa - À propos")
     return (
         <div className={"main_container"}>
             <Hero image={hero} alt={"Paysage montagneux avec rivière au centre"} />
